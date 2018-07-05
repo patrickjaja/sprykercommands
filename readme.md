@@ -6,6 +6,7 @@
  | Command        | Description  |
  | ------------- | :-----:|
  | spryker:install      | --- | 
+ | spryker:console      | --- | 
  | spryker:dcd:activate      | ---      | 
  | spryker:dcd:deactivate      | ---      | 
  | spryker:sync | ---      | |
