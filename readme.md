@@ -10,4 +10,5 @@
  | spryker:dcd:activate      | ---      | 
  | spryker:dcd:deactivate      | ---      | 
  | spryker:dcd:generate      | ---      | 
+ | spryker:coverage:fix      | ---      | 
  | spryker:test | ---      | |
