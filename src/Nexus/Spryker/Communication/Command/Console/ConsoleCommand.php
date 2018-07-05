@@ -14,7 +14,7 @@ class ConsoleCommand extends AbstractCommand
     {
         $this->setName('spryker:console')
             ->setDescription('test command')
-            ->addArgument('command', InputArgument::OPTIONAL, "Spryker Console Command Name", ' -h');
+            ->addArgument('param', InputArgument::OPTIONAL, "Spryker Console Command Name", 'list');
     }
 
     /**
@@ -26,7 +26,7 @@ class ConsoleCommand extends AbstractCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln($this->getFacade()->runShell('docker exec -i php console '.$input->getArgument('command')));
+        $output->writeln($this->getFacade()->runShell('docker exec -i php console '.$input->getArgument('param')));
     }
 
 }

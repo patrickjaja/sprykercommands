@@ -3,13 +3,12 @@
 
 namespace Nexus\Spryker;
 
-
 use Xervice\Core\Facade\AbstractFacade;
 
 /**
- * @method \Nexus\SprykerInstall\SprykerInstallFactory getFactory()
- * @method \Nexus\SprykerInstall\SprykerInstallConfig getConfig()
- * @method \Nexus\SprykerInstall\SprykerInstallClient getClient()
+ * @method \Nexus\Spryker\SprykerFactory getFactory()
+ * @method \Nexus\Spryker\SprykerConfig getConfig()
+ * @method \Nexus\Spryker\SprykerClient getClient()
  */
 class SprykerFacade extends AbstractFacade
 {
@@ -19,5 +18,15 @@ class SprykerFacade extends AbstractFacade
     public function getCommands()
     {
         return $this->getFactory()->getCommandList();
+    }
+
+    /**
+     * @param string $command
+     *
+     * @return string
+     */
+    public function runShell(string $command): string
+    {
+        return $this->getFactory()->getShellFacade()->runCommand($command);
     }
 }

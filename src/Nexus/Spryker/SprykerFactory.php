@@ -18,4 +18,12 @@ class SprykerFactory extends AbstractFactory
     {
         return $this->getDependency(SprykerDependencyProvider::COMMAND_LIST);
     }
+
+    /**
+     * @return \Nexus\Shell\ShellFacade
+     */
+    public function getShellFacade()
+    {
+        return $this->getDependency(SprykerDependencyProvider::SHELL_FACADE);
+    }
 }

@@ -20,6 +20,7 @@ use Xervice\Core\Dependency\Provider\AbstractProvider;
 class SprykerDependencyProvider extends AbstractProvider
 {
     const COMMAND_LIST = 'spryker.command.list';
+    const SHELL_FACADE = 'shell.facade';
 
     /**
      * @param \Xervice\Core\Dependency\DependencyProviderInterface $container
@@ -29,6 +30,7 @@ class SprykerDependencyProvider extends AbstractProvider
         $container[self::COMMAND_LIST] = function(DependencyProviderInterface $container) {
             return $this->getCommandList();
         };
+        $this->addShellFacade($container);
     }
 
     /**
@@ -45,5 +47,14 @@ class SprykerDependencyProvider extends AbstractProvider
             new InstallCommand(),
             new TestCommand(),
         ];
+    }
+    /**
+     * @param \Xervice\Core\Dependency\DependencyProviderInterface $container
+     */
+    private function addShellFacade(DependencyProviderInterface $container): void
+    {
+        $container[self::SHELL_FACADE] = function(DependencyProviderInterface $container) {
+            return $container->getLocator()->shell()->facade();
+        };
     }
 }
