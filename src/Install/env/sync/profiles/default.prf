@@ -1,0 +1,4 @@
+root = /data/shop/development
+root = /local
+
+path = current

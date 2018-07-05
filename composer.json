@@ -1,0 +1,25 @@
+{
+  "name": "nxs_schoenfeld/sprykercommands",
+  "description": "Spryker Commands",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1",
+    "xervice/console": "^1.0.0"
+  },
+  "require-dev": {
+    "nexusnetsoftgmbh/nexuscli": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "SprykerCli\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "use-include-path": true,
+    "sort-packages": true,
+    "github-protocols": ["https"],
+    "process-timeout": 900
+  }
+}

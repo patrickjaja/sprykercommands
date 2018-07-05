@@ -1,0 +1,27 @@
+###############################################################################
+##       This file is managed by saltstack - DO NOT MANUALLY CHANGE IT       ##
+###############################################################################
+
+server {
+    # Listener for production/staging - requires external LoadBalancer directing traffic to this port
+    listen 10000;
+
+    # Listener for testing/development - one host only, doesn't require external LoadBalancer
+    listen 80;
+
+    server_name coverage.demoshop.local;
+    access_log  /var/log/development/yves-access.log extended;
+
+    root /data/shop/development/current/tests;
+
+    ###
+    ### Rewrite rules
+    ###
+    ### Beware of load balancer heartbeat check (/monitoring/heartbeat), it must stay not rewritten.
+    ## Allow only first (default) hostname
+    ## This feature is disabled as it should clarify production requirements for each site
+    #if ($host != $server_name) {
+    #    rewrite ^(.*)$ http://$server_name$1 permanent;
+    #}
+
+}
