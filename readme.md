@@ -1,1 +1,2 @@
- ## Spryker Command Collection
+ ##### Spryker Command Abstraction 
+ ##### Nexus Netsoft Specific Helper Collection
