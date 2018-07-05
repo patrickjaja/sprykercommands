@@ -9,5 +9,5 @@
  | spryker:console      | --- | 
  | spryker:dcd:activate      | ---      | 
  | spryker:dcd:deactivate      | ---      | 
- | spryker:sync | ---      | |
+ | spryker:dcd:generate      | ---      | 
  | spryker:test | ---      | |

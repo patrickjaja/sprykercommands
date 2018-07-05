@@ -6,7 +6,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Xervice\Console\Command\AbstractCommand;
 
-class DeadCodeDetectionCommand extends AbstractCommand
+class DeadCodeDetectionCommandGenerate extends AbstractCommand
 {
     private $copy = 'docker cp';
 
