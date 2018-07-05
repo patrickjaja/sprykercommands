@@ -5,11 +5,10 @@
   "require": {
     "php": ">=7.1",
     "xervice/console": "^1.0.0",
-    "phpunit/php-code-coverage": "<=5.2"
-  },
-  "require-dev": {
+    "phpunit/php-code-coverage": "<=5.2",
     "nexusnetsoftgmbh/nexuscli": "dev-master"
   },
+  "require-dev": { },
   "autoload": {
     "psr-4": {
       "SprykerCli\\": "src"

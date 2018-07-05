@@ -1,3 +1,5 @@
+ ##### Install
+ composer require --dev patrickjaja/sprykercommands:dev-master
  ##### Spryker Command Abstraction 
  ##### Nexus Netsoft Specific Helper Collection
  
