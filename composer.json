@@ -19,7 +19,6 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true,
   "config": {
     "use-include-path": true,
     "sort-packages": true,
