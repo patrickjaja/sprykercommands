@@ -29,5 +29,4 @@ class ConsoleCommand extends AbstractCommand
         $output->writeln($this->getFacade()->runShell('docker exec -i php console '.$input->getArgument('command')));
     }
 
-
 }

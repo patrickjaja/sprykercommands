@@ -5,7 +5,7 @@
   "require": {
     "php": ">=7.1",
     "xervice/console": "^1.0.0",
-    "phpunit/php-code-coverage": "<=5.2",
+    "phpunit/php-code-coverage": "<=5.2"
   },
   "require-dev": {
     "nexusnetsoftgmbh/nexuscli": "dev-master"
