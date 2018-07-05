@@ -24,7 +24,7 @@ class InstallCommand extends AbstractCommand
 
     protected function configure()
     {
-        $this->setName('spryker:lekkerland:install')
+        $this->setName('spryker:install')
             ->setDescription('Install automation for lekkerland');
     }
 
